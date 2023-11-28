@@ -15,7 +15,7 @@ int main()
     scanf("%d", &n);
     printf("Ingrese el valor para columnas: ");
     scanf("%d", &m);
-    // Agregamos la matriz con los numeros aliatorios y la imrpimimos 
+    // Agregamos la matriz con los numeros aliatorios y la imrpimimos
     int matrix1[n][m];
     printf("La primera matriz es: \n");
     for (int i = 0; i < n; i++)
@@ -41,3 +41,19 @@ int main()
         }
         printf("\n");
     }
+    // Colocamos la tercera matriz para que guarde el resultado matricial y imprimimos las misma
+    int matrixresult[n][m];
+    printf("\n");
+    printf("\nEl resultado de la suma de las matrices es : \n ");
+    for (int i = 0; i < n; i++)
+    {
+        printf("\n");
+        for (int j = 0; j < m; j++)
+        {
+            matrixresult[i][j] = matrix1[i][j] + matrix2[i][j];
+            // Imprimimos la matriz resultante
+            printf("%d\t", matrixresult[i][j]);
+        }
+    }
+    return 0;
+}
