@@ -55,6 +55,6 @@ int main()
             printf("%d\t", matrixresult[i][j]);
         }
     }
-    printf("Gracias por utilizar el program de suma de matrices aleatorias");
+    printf("\n\nGracias por utilizar el programa de suma de matrices aleatorias\n\n");
     return 0;
 }
